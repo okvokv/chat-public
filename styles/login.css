@@ -1,0 +1,73 @@
+.login {
+	margin: 0 auto;
+	height: 100dvh;
+	background-image: url(../../images/pexels-photo-7135027.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.login__form {
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 40dvw;
+	min-width: 310px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*backface-visibility:hidden;*/
+	background-color: rgba(255, 166, 0, 0.1);
+	backdrop-filter: blur(15px);
+	box-shadow: 0 0 30px 0px rgba(0, 0, 0, .5);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.login__form-title {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.login__form-input {
+	margin-top: 20px;
+	width: 80%;
+	height: 35px;
+	font-size: 12px;
+	border-radius: 10px;
+}
+
+.login__form-input:hover,
+.login__form-input:focus {
+	outline: 1px solid rgb(51, 98, 57);
+}
+
+.form__submit-button {
+	margin-top: 60px;
+	width: 80%;
+	height: 35px;
+	font-size: 18px;
+	font-weight: 800;
+	/* текст двойной линией */
+	font-family: 'a-rewinderotl.woff2';
+	letter-spacing: 2px;
+	color: rgb(64, 5, 17);
+	border-radius: 10px;
+	background-color: rgba(0, 250, 250, 1);
+	/* фон просвечивает */
+}
+
+.form__submit-button:hover {
+	background-color: rgba(0, 250, 250, .7);
+}
+
+.form__text {
+	margin-top: 30px;
+	width: 270px;
+	/* анти-градиент */
+	color: rgb(65, 64, 18);
+	font-size: 12px;
+	align-self: center;
+}

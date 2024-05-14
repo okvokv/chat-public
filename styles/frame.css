@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+
+.frame {
+	margin: 0 auto;
+	width: 100%;
+	min-width: 320px;
+	min-height: 100dvh;
+	color: rgba(0, 0, 0, 1);
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	scrollbar-width: thin;
+	scrollbar-color: #202020 #8b8b8b;
+	/*scrollbar-gutter: stable;*/
+	/*overflow: auto;*/
+	/*margin-left: calc(100vw - 100%);*/
+	/* margin-right: 0;*/
+	cursor: default;
+}
+
+.frame:hover {
+	scrollbar-color: #555555;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	background-color: #202020;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background-color: #8b8b8b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #555555;
+}

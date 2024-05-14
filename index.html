@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="frame" lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./index.css">
+	<title>Чат</title>
+</head>
+
+<body class="page">
+
+	<header>
+		<div class="header__logo"></div>
+	</header>
+
+	<!--section class="admin-login">
+		<form class="admin-login__form">
+			<h2 class="admin-login__form-title">Вход администратора</h2>
+			<input type="name" autofocus required>
+			<input type="password" required>
+		</form>
+	</section-->
+
+	<main>
+
+		<section class="chat">
+			<h2 class="chat__title">Мужской чат &nbsp; (без регистрации)</h2>
+
+			<div class="chatbox">
+				<div class="messagespane">
+					<p class="chat__message">**** Welcome **** !</p>
+				</div>
+				<div class="userspane"></div>
+				<input class="chat__input">
+				<button class="chat__submit-button" type="submit" aria-label="кнопка отправки" onclick={submit}>Ввод</button>
+			</div>
+
+		</section>
+
+	</main>
+
+	<div class="table">
+
+	</div>
+
+	<section class="photo-gallery">
+
+	</section>
+
+</body>
+
+<footer class="footer">
+
+	<h2 class="footer__title">Мужской чат. Без регистрации.</h2>
+	<div class="footer__group">
+
+		<p class="footer__copyright">&copy; 2024 - {year}</p>
+		<ul class="footer__links">
+			<li>
+				<p class="footer__link" onClick={}>Обратная связь</p>
+			</li>
+			<li><a class="footer__ads" href="#" target="_blank" rel="noopener noreferrer">######</a></li>
+			<li><a class="footer__ads" href="#" target="_blank" rel="noopener noreferrer">######</a></li>
+		</ul>
+
+	</div>
+
+</footer>
+
+<section class="login">
+
+	<form class="login__form">
+		<h2 class="login__form-title">Вход</h2>
+		<input class="login__form-input" type="name" placeholder=" Введите ник /не более 20 символов/" required>
+		<!-- выбор цвета или авто -->
+		<input class="login__form-input" placeholder=" Введите пароль /для зарегистрированных ников/" type="password">
+		<input class="login__form-input" placeholder=" Введите адрес почты" type="email" required>
+		<button class="form__submit-button" type="submit" aria-label="кнопка отправки" onClick={submit}>Войти</button>
+		<p class="form__text">Вы можете зарегистрироваться, тогда Ваши настройки гарантированно сохранятся.</p>
+	</form>
+
+</section>
+
+</html>

@@ -1,10 +1,13 @@
 .chat {
 	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 14px;
+	font-weight: 500;
 }
 
 .chat__title {
 	margin: 0;
-	margin-top: 20px;
 	font-family: Impact;
 	font-size: 34px;
 	font-weight: 500;
@@ -21,8 +24,13 @@
 	border-radius: 4px;
 	display: grid;
 	grid-template-columns: 4fr 1fr;
-	gap: 10px;
+	column-gap: 10px;
+	row-gap: 5px;
 	grid-template-rows: auto;
+	grid-template-areas:
+		"header header"
+		"left right"
+		"footer footer";
 }
 
 .chat__message {
@@ -34,7 +42,6 @@
 	background-color: rgb(255, 255, 255);
 	display: grid;
 	grid-template-rows: repeat(34, 1fr);
-	align-items: center;
 }
 
 .userspane {
@@ -42,16 +49,38 @@
 	background-color: rgb(255, 255, 255);
 	display: grid;
 	grid-template-rows: repeat(34, 1fr);
-	align-items: center;
+}
+
+.chat__form {
+	grid-area: footer;
+}
+
+.chat__username {
+	width: fit-content;
+}
+
+.chat__username:hover {
+	opacity: .7;
 }
 
 .chat__input {
+	width: 81%;
 	height: 30px;
+	outline: none; 
+	box-sizing: content-box;
+	border: 1px solid rgb(207, 179, 179);
+	border-radius: 4px 0 0 4px;
+}
+
+.chat__input:hover, .chat__input:focus {
+	border: 1px solid rgb(159, 81, 36);
 }
 
 .chat__submit-button {
+	width: 75px;
 	height: 30px;
 	background-color: rgb(138, 43, 226, 1);
+	border-radius: 0 30px 30px 0;
 }
 
 .chat__submit-button:hover {

@@ -10,7 +10,7 @@
 	margin: 0;
 	font-family: Impact;
 	font-size: 34px;
-	font-weight: 500;
+	font-weight: 200;
 	text-align: center;
 }
 
@@ -52,11 +52,14 @@
 }
 
 .chat__form {
+	display: flex;
+	align-items: center;
 	grid-area: footer;
 }
 
 .chat__username {
 	width: fit-content;
+	margin-right: 5px;
 }
 
 .chat__username:hover {
@@ -64,23 +67,22 @@
 }
 
 .chat__input {
-	width: 81%;
-	height: 30px;
-	outline: none; 
-	box-sizing: content-box;
-	border: 1px solid rgb(207, 179, 179);
+	width: 82%;
+	height: 28px;
+	margin-right: 2px;
 	border-radius: 4px 0 0 4px;
 }
 
-.chat__input:hover, .chat__input:focus {
-	border: 1px solid rgb(159, 81, 36);
+.chat__input:hover,
+.chat__input:focus {
+	outline: 1px solid rgb(159, 81, 36);
 }
 
 .chat__submit-button {
 	width: 75px;
 	height: 30px;
 	background-color: rgb(138, 43, 226, 1);
-	border-radius: 0 30px 30px 0;
+	border-radius: 0 13px 13px 0;
 }
 
 .chat__submit-button:hover {

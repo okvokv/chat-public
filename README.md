@@ -6,4 +6,4 @@
 
 Проект выполнен с использованием техники адаптивной вёрстки.
 
-https://okvokv.github.io/html-chat-public/
+https://okvokv.github.io/chat-public/

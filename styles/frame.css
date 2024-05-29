@@ -5,6 +5,14 @@
 	box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
 .frame {
 	margin: 0 auto;
 	width: 100%;

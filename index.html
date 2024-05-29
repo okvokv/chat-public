@@ -31,34 +31,39 @@
 		}
 	-->
 
-<section class="login">
+	<section class="login">
 
-	<form class="login__form">
-		<h2 class="login__form-title">Вход</h2>
-		<input class="login__form-input" type="name" placeholder=" Введите ник /не более 20 символов/" required>
-		<!-- выбор цвета или авто -->
-		<input class="login__form-input" placeholder=" Введите адрес почты" type="email">
-		<input class="login__form-input" placeholder=" Введите пароль /для зарегистрированных ников/" type="password">
-		<button class="form__submit-button" type="submit" aria-label="кнопка отправки" onClick={submit}>Войти</button>
-		<p class="form__text">Вы можете зарегистрироваться, тогда Ваши настройки гарантированно сохранятся.</p>
-	</form>
+		<form class="login__form">
+			<h2 class="login__form-title">Вход</h2>
+			<input class="login__form-input" type="name" placeholder=" Введите ник /не более 20 символов/" required>
+			<!-- выбор цвета или авто -->
+			<input class="login__form-input" placeholder=" Введите адрес почты" type="email">
+			<input class="login__form-input" placeholder=" Введите пароль /для зарегистрированных ников/" type="password">
+			<button class="form__submit-button" type="submit" aria-label="кнопка отправки" onClick={submit}>Войти</button>
+			<p class="form__text">Вы можете зарегистрироваться, тогда Ваши настройки гарантированно сохранятся.</p>
+		</form>
 
-</section>
+	</section>
 
 	<main>
 
 		<section class="chat">
 			<h2 class="chat__title">МУЖСКОЙ ЧАТ &nbsp; (без регистрации)</h2>
 
-			<div class="chatbox">
-				<div class="messagespane">
-					<p class="chat__message">**** Welcome **** !</p>
+			<div class="chat__box">
+
+				<div class="chat__messages-pane">
+					<p class="chat__wmessage">**** Welcome **** !</p>
 				</div>
-				<div class="userspane"></div>
+
+				<div class="chat__users-pane"></div>
+
 				<form class="chat__form">
 					<label class="chat__username" onClick={handleChangeName}>{userName}</label>
-					<input class="chat__input" type="text" name="userText" value={userText} onChange={handleChangeValue} autoComplete="on" autoFocus>
-					<button class="chat__submit-button" type="submit" aria-label="кнопка отправки"	onclick={handleSubmit}>Послать</button>
+					<input class="chat__input" type="text" name="userMessage" value={userMessage} onChange={handleChangeValue}
+						autoComplete="on" autoFocus>
+					<button class="chat__submit-button" type="submit" aria-label="кнопка отправки"
+						onclick={handleSubmit}>Послать</button>
 				</form>
 			</div>
 
@@ -79,15 +84,16 @@
 <footer class="footer">
 
 	<h2 class="footer__title">Мужской чат. Без регистрации.</h2>
+
 	<div class="footer__group">
 
-		<p class="footer__copyright">&copy; 2024 - {year}</p>
+		<p class="footer__copy">&copy; 2024 - {year}</p>
 		<ul class="footer__links">
 			<li>
-				<p class="footer__link" onClick={}>Обратная связь</p>
+				<p class="footer__text" onClick={}>Обратная связь</p>
 			</li>
-			<li><a class="footer__ads" href="#" target="_blank" rel="noopener noreferrer">######</a></li>
-			<li><a class="footer__ads" href="#" target="_blank" rel="noopener noreferrer">######</a></li>
+			<li><a class="footer__ad" href="#" target="_blank" rel="noopener noreferrer">######</a></li>
+			<li><a class="footer__ad" href="#" target="_blank" rel="noopener noreferrer">######</a></li>
 		</ul>
 
 	</div>

@@ -1,20 +1,9 @@
 .admin-login {
 	margin: 0 auto;
-	height: 100vh;
+	height: 100dvh;
 	display:flex;
 }
 
 .admin-login__form {
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 400px;
-	height: 440px;
-	background-color: transparent;
-	/*backface-visibility: hidden;*/
-	backdrop-filter: blur(20px);
-	box-shadow: 0 0 30px 0px rgba(0, 0, 0, .5);
-	border: 2px solid rgba(255, 255, 255, .5);
-	border-radius: 20px;
+	/**/
 }

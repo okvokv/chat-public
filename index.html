@@ -53,10 +53,18 @@
 			<div class="chat__box">
 
 				<div class="chat__messages-pane">
-					<p class="chat__wmessage">**** Welcome **** !</p>
+					<div class="chat__cell chat__wmessage">**** Welcome **** !</div>
+					<div class="chat__cell"></div>
+					<div class="chat__cell"></div>
+					<div class="chat__cell"></div>
 				</div>
 
-				<div class="chat__users-pane"></div>
+				<div class="chat__users-pane">
+					<div class="chat__cell"></div>
+					<div class="chat__cell"></div>
+					<div class="chat__cell"></div>
+					<div class="chat__cell"></div>
+				</div>
 
 				<form class="chat__form">
 					<label class="chat__username" onClick={handleChangeName}>{userName}</label>
@@ -65,6 +73,7 @@
 					<button class="chat__submit-button" type="submit" aria-label="кнопка отправки"
 						onclick={handleSubmit}>Послать</button>
 				</form>
+
 			</div>
 
 		</section>

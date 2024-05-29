@@ -20,35 +20,42 @@
 	padding: 10px;
 	background-color: rgb(207, 179, 179);
 	width: 87%;
-	height: 81dvh;
+	/*max-height: 90dvh;*/
 	border-radius: 4px;
 	display: grid;
 	grid-template-columns: 4fr 1fr;
 	column-gap: 10px;
 	row-gap: 5px;
-	grid-template-rows: auto;
 	grid-template-areas:
 		"header header"
 		"left right"
 		"footer footer";
 }
 
-.chat__wmessage {
-	text-align: center;
-}
-
 .chat__messages-pane {
 	overflow-y: hidden;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(173, 252, 128);
 	display: grid;
-	grid-template-rows: repeat(34, 1fr);
+	grid-template-rows: repeat(16, 1fr);
+	row-gap: 2px;
 }
 
 .chat__users-pane {
 	overflow-y: hidden;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(173, 252, 128);
 	display: grid;
-	grid-template-rows: repeat(34, 1fr);
+	grid-template-rows: repeat(16, 1fr);
+	row-gap: 2px;
+}
+
+.chat__wmessage {
+	line-height: 2;
+	text-align: center;
+}
+
+.chat__cell{
+	height: 29px;
+	background-color: rgb(255, 255, 255);
 }
 
 .chat__form {
@@ -67,27 +74,29 @@
 	border-radius: 13px 0 0 13px;
 }
 
-.chat__username:hover {
-	opacity: .7;
-}
-
 .chat__input {
+	padding: 0;
+	margin: 0;
 	margin-right: 2px;
 	width: 82%;
 	height: 28px;
-	border-radius: 4px 0 0 4px;
+	/*border-radius: 4px 0 0 4px;*/
+}
+
+.chat__submit-button {
+	width: 75px;
+	height: 29px;
+	background-color: rgb(138, 43, 226, 1);
+	border-radius: 0 13px 13px 0;
+}
+
+.chat__username:hover {
+	opacity: .7;
 }
 
 .chat__input:hover,
 .chat__input:focus {
 	outline: 1px solid rgb(159, 81, 36);
-}
-
-.chat__submit-button {
-	width: 75px;
-	height: 30px;
-	background-color: rgb(138, 43, 226, 1);
-	border-radius: 0 13px 13px 0;
 }
 
 .chat__submit-button:hover {

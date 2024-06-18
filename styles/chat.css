@@ -1,13 +1,10 @@
 .chat {
 	margin: 0 auto;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	font-size: 14px;
-	font-weight: 500;
+	width: 87%;
 }
 
 .chat__title {
-	margin: 0;
+	margin-top: 30px;
 	font-family: Impact;
 	font-size: 34px;
 	font-weight: 200;
@@ -15,16 +12,20 @@
 }
 
 .chat__title-gray {
+	font-size: 26px;
 	color: rgb(128, 128, 128);
 }
 
 .chat__box {
 	margin: 0 auto;
-	margin-top: 25px;
+	margin-top: 30px;
 	padding: 10px;
 	background-color: rgb(207, 179, 179);
-	width: 87%;
 	/*max-height: 90dvh;*/
+	font-size: 14px;
+	font-weight: 500;
+	/* центрируем по вертикали любые сообщения в таблице*/
+	line-height: 200%;
 	border-radius: 4px;
 	display: grid;
 	grid-template-columns: 4fr 1fr;
@@ -42,7 +43,7 @@
 	display: grid;
 	grid-template-columns: 1fr 10fr;
 	grid-template-rows: repeat(16, 1fr);
-	row-gap: 2px;
+	row-gap: 1px;
 }
 
 .chat__users-pane {
@@ -51,11 +52,10 @@
 	display: grid;
 	grid-template-columns: 1fr 10fr;
 	grid-template-rows: repeat(16, 1fr);
-	row-gap: 2px;
+	row-gap: 1px;
 }
 
 .chat__wmessage {
-	line-height: 200%;
 	text-align: center;
 }
 
@@ -72,6 +72,7 @@
 
 .chat__form {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	grid-area: footer;
 }
@@ -79,8 +80,6 @@
 /* сделать адаптивную высоту инпута */
 
 .chat__username {
-	margin-right: 4px;
-	padding: 7px;
 	width: 85px;
 	border: 1px solid rgb(159, 81, 36);
 	border-radius: 13px 0 0 13px;
@@ -89,9 +88,9 @@
 .chat__input {
 	padding: 0;
 	margin: 0;
-	margin-right: 2px;
-	width: 82%;
+	width: 80.5%;
 	height: 28px;
+	padding-left: 6px;
 	/*border-radius: 4px 0 0 4px;*/
 }
 

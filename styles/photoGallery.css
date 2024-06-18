@@ -1,0 +1,14 @@
+.photoGallery {
+	margin: 0 auto;
+	width: 87%;
+}
+
+.photoGallery__title {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-family: Impact;
+	font-size: 26px;
+	font-weight: 100;
+	color: rgb(80, 80, 80);
+	text-align: center;
+}
